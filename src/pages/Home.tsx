@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useTranslation } from "react-i18next"; // Import useTranslation
-import Navbar from "../components/Layout/Navbar";
+import Navbar from "../components/Navbar";
 import i18n from "../i18n";
 import { LanguageSwitcher } from "../components/Text-design/LanguageSwitcher";
 
@@ -16,12 +16,7 @@ export default function Home() {
 
   return (
     <div className="">
-      <Navbar
-        solutionRef={solutionRef} // Rename serviceRef to solutionRef
-        contactRef={contactRef}
-        developmentRef={developmentRef}
-        testimonialsRef={testimonialsRef}
-      ></Navbar>{" "}
+
     </div>
   );
 }

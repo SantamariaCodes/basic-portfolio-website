@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import React, { useState, useCallback, useMemo } from "react";
-import { LanguageSwitcher } from "../Text-design/LanguageSwitcher";
+import { LanguageSwitcher } from "./Text-design/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 
 interface SvgProps {
@@ -31,10 +31,10 @@ const HamburgerIcon: React.FC<SvgProps> = ({ className, onClick }) => (
 );
 
 interface NavbarProps {
-  solutionRef: React.RefObject<HTMLDivElement>;
+  homeRef: React.RefObject<HTMLDivElement>;
+  aboutRef: React.RefObject<HTMLDivElement>;
+  projectsRef: React.RefObject<HTMLDivElement>;
   contactRef: React.RefObject<HTMLDivElement>;
-  developmentRef: React.RefObject<HTMLDivElement>;
-  testimonialsRef: React.RefObject<HTMLDivElement>;
 }
 
 const useScrollToRef = (ref: React.RefObject<HTMLDivElement>) => {
@@ -48,21 +48,17 @@ const useScrollToRef = (ref: React.RefObject<HTMLDivElement>) => {
 };
 
 const Navbar: React.FC<NavbarProps> = ({
-  solutionRef,
+  homeRef,
+  aboutRef,
+  projectsRef,
   contactRef,
-  developmentRef,
-  testimonialsRef,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const scrollToSolution = useScrollToRef(solutionRef);
+  const scrollToHome = useScrollToRef(homeRef);
+  const scrollToAbout = useScrollToRef(aboutRef);
+  const scrollToProjects = useScrollToRef(projectsRef);
   const scrollToContact = useScrollToRef(contactRef);
-  const scrollToDevelopment = useScrollToRef(developmentRef);
-  const scrollToTestimonials = useScrollToRef(testimonialsRef);
-
-  const scrollToTop = useCallback(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, []);
 
   const toggleIsOpen = useCallback(() => {
     setIsOpen((prev) => !prev);
@@ -71,21 +67,12 @@ const Navbar: React.FC<NavbarProps> = ({
   const { t } = useTranslation("navbarLinks");
   const links = useMemo(
     () => [
-      { text: t("home"), action: scrollToSolution },
-      { text: t("about"), action: scrollToDevelopment },
-      {
-        text: t("projects"),
-        action: scrollToTestimonials,
-      },
+      { text: t("home"), action: scrollToHome },
+      { text: t("about"), action: scrollToAbout },
+      { text: t("projects"), action: scrollToProjects },
       { text: t("contact"), action: scrollToContact },
     ],
-    [
-      t,
-      scrollToSolution,
-      scrollToDevelopment,
-      scrollToTestimonials,
-      scrollToContact,
-    ]
+    [t, scrollToHome, scrollToAbout, scrollToProjects, scrollToContact]
   );
 
   return (
@@ -96,7 +83,7 @@ const Navbar: React.FC<NavbarProps> = ({
             src="/resources/header/tuyoLogo.svg"
             alt="Logo"
             className="h-6 md:h-7 lg:h-10 xl:h-12 md:mb-0"
-            onClick={scrollToTop}
+            onClick={scrollToHome}
           />
         </div>
 
