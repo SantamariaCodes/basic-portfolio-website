@@ -2,6 +2,7 @@ import React, { useCallback } from "react";
 import ProjectsButton from "./Buttons/ProjectsButton";
 import useScrollToRef from "../hooks/useScrollToRef";
 import SocialIcons from "./SocialIcons/SocialIcons";
+import { useTranslation } from "react-i18next"; // import this hook
 
 interface HomeProps {
   homeRef: React.RefObject<HTMLDivElement>;
@@ -14,6 +15,7 @@ const Home: React.ForwardRefRenderFunction<HTMLDivElement, HomeProps> = (
 ) => {
   const { projectsRef, homeRef } = props;
   const scrollToProjects = useScrollToRef(projectsRef);
+  const { t } = useTranslation("home"); // use the hook with the 'home' namespace
 
   return (
     <div
@@ -21,7 +23,7 @@ const Home: React.ForwardRefRenderFunction<HTMLDivElement, HomeProps> = (
       className="h-screen section pt-[100px] flex flex-col items-center justify-center relative"
     >
       <h1 className="text-4xl mb-5 text-center relative z-10">
-        Hey, I'm Diego Santamaria
+        {t("title")} {/* use t function to get translations */}
       </h1>
 
       {/* Place the SocialIcons outside the h1 and visible only on screens above lg */}
@@ -30,8 +32,7 @@ const Home: React.ForwardRefRenderFunction<HTMLDivElement, HomeProps> = (
       </div>
 
       <p className="text-xl text-center w-4/5 md:w-1/2 z-10">
-        A Frontend-focused Web Developer building the Frontend of Websites and
-        Web Applications that leads to the success of the overall product.
+        {t("description")} {/* use t function to get translations */}
       </p>
 
       <ProjectsButton onClick={scrollToProjects} />

@@ -7,6 +7,9 @@ import enNavbarLinks from "./locales/en/navbarLinks.json";
 import esNavbarLinks from "./locales/es/navbarLinks.json";
 import enHome from "./locales/en/home.json";
 import esHome from "./locales/es/home.json";
+import enProjectButton from "./locales/en/projectButton.json";
+import esProjectButton from "./locales/es/projectButton.json";
+
 
 i18n
   .use(LanguageDetector)
@@ -17,11 +20,13 @@ i18n
         navbar: enNavbar,
         navbarLinks: enNavbarLinks,
         home: enHome,
+        projectButton: enProjectButton
       },
       es: {
         navbar: esNavbar,
         navbarLinks: esNavbarLinks,
         home: esHome,
+        projectButton: esProjectButton 
       },
     },
     lng: "en",
