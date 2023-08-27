@@ -1,46 +1,61 @@
-import { useTranslation } from "react-i18next";
+import React, { useState, useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
-// Arrow pointing to the left
-const ArrowLeft = ({ isBold }: { isBold: boolean }) => (
-  <svg className={`inline ml-1 h-4 w-4 ${isBold ? 'text-white' : 'text-gray-500'}`} viewBox="0 0 24 24">
-    <path fill="currentColor" d="M14.828 4.172a.5.5 0 00-.707 0L7.05 11.243a.5.5 0 000 .707l7.07 7.07a.5.5 0 00.707-.707l-6.364-6.364l6.364-6.364a.5.5 0 000-.707z" />
-  </svg>
-);
-
-// Arrow pointing to the right
-const ArrowRight = ({ isBold }: { isBold: boolean }) => (
-  <svg className={`inline mr-1 h-4 w-4 ${isBold ? 'text-white' : 'text-gray-500'}`} viewBox="0 0 24 24">
-    <path fill="currentColor" d="M9.172 4.172a.5.5 0 01.707 0l7.071 7.071a.5.5 0 010 .707l-7.07 7.071a.5.5 0 01-.707-.707l6.364-6.364l-6.364-6.364a.5.5 0 010-.707z" />
-  </svg>
-);
-
-export function LanguageSwitcher() {
+const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
+  const [showDropdown, setShowDropdown] = useState(false);
+  const wrapperRef = useRef<HTMLDivElement | null>(null);
 
-  const changeLanguage = (lng: string) => {
+  const changeLanguage = (lng: 'en' | 'es') => {
     i18n.changeLanguage(lng);
+    setShowDropdown(false);
   };
 
-  const isCurrentLanguage = (lng: string) => {
-    return i18n.language === lng;
+  const handleClickOutside = (event: MouseEvent) => {
+    if (wrapperRef.current && !wrapperRef.current.contains(event.target as Node)) {
+      setShowDropdown(false);
+    }
   };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
-    <div className="flex items-center">
-      <button
-        className={`text-black border-none focus:outline-none mx-2 lg:text-xl lg:px-2 leading-tight rounded font-yourFontFamily 
-        ${isCurrentLanguage("en") ? "font-extrabold" : ""}`}
-        onClick={() => changeLanguage("en")}
-      >
-        <ArrowLeft isBold={isCurrentLanguage("en")} /> ENG
-      </button>
-      <button
-        className={`text-black border-none focus:outline-none mx-2 lg:text-xl lg:px-2 leading-tight rounded font-yourFontFamily 
-        ${isCurrentLanguage("es") ? "font-extrabold" : ""}`}
-        onClick={() => changeLanguage("es")}
-      >
-        ESP <ArrowRight isBold={isCurrentLanguage("es")} />
-      </button>
+    <div ref={wrapperRef} className="relative cursor-pointer rounded-sm">
+      <div onClick={() => setShowDropdown(!showDropdown)}>
+        {i18n.language === 'en' ? 'ENG' : 'ESP'}
+        <span className="ml-1"></span>
+        <span className="">▼</span>
+      </div>
+
+      {showDropdown && (
+        <div className="absolute right-0 mt-2 w-auto rounded-sm shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10">
+          <div className="" role="none">
+            {i18n.language === 'en' && (
+              <button
+                onClick={() => changeLanguage('es')}
+                className="text-gray-700 block w-full text-left px-4 py-2 text-sm hover:bg-gray-100"
+              >
+                ESP
+              </button>
+            )}
+            {i18n.language === 'es' && (
+              <button
+                onClick={() => changeLanguage('en')}
+                className="text-gray-700 block w-full text-left px-4 py-2 text-sm hover:bg-gray-100"
+              >
+                ENG
+              </button>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
-}
+};
+
+export default LanguageSwitcher;
