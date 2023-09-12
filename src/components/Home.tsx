@@ -21,7 +21,14 @@ const Home: React.ForwardRefRenderFunction<HTMLDivElement, HomeProps> = (
     <div
       ref={homeRef}
       className="h-screen section pt-[100px] flex flex-col items-center justify-center relative"
+      style={{
+        backgroundImage: 'url("/resources/img/bg-home.jpeg")', // Corrected this line
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+      }}
     >
+      {/* Removed the <img> element for testing */}
       <h1 className="text-4xl mb-5 text-center relative z-10">
         {t("title")} {/* use t function to get translations */}
       </h1>

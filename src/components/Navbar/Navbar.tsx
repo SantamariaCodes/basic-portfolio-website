@@ -1,10 +1,13 @@
-import React, { useState, useCallback, useMemo } from "react";
-import { Link } from "react-router-dom";
-import LanguageSwitcher from "../Text-design/LanguageSwitcher";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import useScrollToRef from "../../hooks/useScrollToRef";
 import IconToggle from "./IconsToggle";
-import { LanguageSwitcherCommon } from "../Text-design/LanguageSwitcherCommon";
+import { LanguageSwitcherCommon } from "../Translation/LanguageSwitcherCommon";
+
+interface Link {
+  text: string;
+  action: () => void;
+}
 
 interface NavbarProps {
   homeRef: React.RefObject<HTMLDivElement>;
@@ -20,6 +23,21 @@ const Navbar: React.FC<NavbarProps> = ({
   contactRef,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const navRef = useRef<HTMLDivElement | null>(null);
+
+  const handleClickOutside = useCallback((event: MouseEvent) => {
+    if (navRef.current && !navRef.current.contains(event.target as Node)) {
+      setIsOpen(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [handleClickOutside]);
+
   const scrollToHome = useScrollToRef(homeRef);
   const scrollToAbout = useScrollToRef(aboutRef);
   const scrollToProjects = useScrollToRef(projectsRef);
@@ -31,65 +49,67 @@ const Navbar: React.FC<NavbarProps> = ({
 
   const { t } = useTranslation("navbarLinks");
 
-  const links = useMemo(
-    () => [
-      { text: t("home"), action: scrollToHome },
-      { text: t("about"), action: scrollToAbout },
-      { text: t("projects"), action: scrollToProjects },
-      { text: t("contact"), action: scrollToContact },
-    ],
-    [t, scrollToHome, scrollToAbout, scrollToProjects, scrollToContact]
-  );
+  const links: Link[] = [
+    { text: t("about"), action: scrollToAbout },
+    { text: t("projects"), action: scrollToProjects },
+    { text: t("contact"), action: scrollToContact },
+  ];
 
   return (
-    <div className="bg-headerBg bg-white fixed w-full top-0 z-50">
-      <nav className="flex items-center justify-between p-5 pt-7 lg:pt-5 md:px-10 2xl:px-10 lg:justify-start">
-        <div className="">
-          <p>Diego Santamaria</p>
+    <nav className="bg-white fixed w-full z-50" ref={navRef}>
+      <div className="flex items-center justify-between p-3 px-5 md:px-5 2xl:px-8 lg:justify-start lg:py-4">
+        <div className="flex items-center " onClick={scrollToHome}>
+          <img
+            src="/resources/img/portrait.png"
+            className="h-10 md:h-12 lg:h-14 2xl:h-16 rounded-full"
+            alt=""
+          />
+          <p className="lg:px-1 font-extrabold text-sm sm:text-base lg:text-lg leading-tight rounded font-yourFontFamily ml-2">
+            DIEGO SANTAMARIA
+          </p>
         </div>
-        
-        <div className="hidden lg:flex flex-grow justify-end items-center">
+
+        <div className="items-center ml-auto hidden lg:flex">
           {links.map((link, index) => (
             <button
               key={index}
-              className="text-black font-semibold mx-1 xl:px-2 lg:px-1 text-lg lg:text-xl leading-tight rounded font-yourFontFamily"
+              className="font-extrabold lg:px-1 text-base leading-tight rounded font-yourFontFamily mx-5"
               onClick={link.action}
             >
               {link.text}
             </button>
           ))}
+          <LanguageSwitcherCommon />
         </div>
-        
+
         <div className="lg:hidden flex-grow-0">
           <IconToggle isOpen={isOpen} toggle={toggleIsOpen} />
         </div>
-      </nav>
-
+      </div>
       <div
         className={`${
           isOpen ? "block" : "hidden"
-        } lg:hidden w-full block flex-grow lg:flex lg:items-center bg-headerBg `}
+        } lg:hidden w-full block flex-grow lg:flex lg:items-center bg-headerBg`}
       >
-        <div className="text-black font-semibold lg:flex lg:flex-grow lg:justify-center w-full">
+        <div className="font-extrabold lg:flex lg:flex-grow lg:justify-center w-full">
           {links.map((link, index) => (
-            <Link
+            <button
               key={index}
-              to="#"
-              className="block text-center w-full py-3  hover:bg-gray-200 transition duration-300 ease-in-out lg:inline-block lg:mt-0 lg:mx-2 border-b border-white"
+              className="block text-center w-full py-3 hover:bg-gray-200 transition duration-300 ease-in-out lg:inline-block lg:mt-0 lg:mx-2 border-b border-white"
               onClick={() => {
                 setIsOpen(false);
                 link.action();
               }}
             >
               {link.text}
-            </Link>
+            </button>
           ))}
         </div>
         <div className="mt-5 pb-5 flex justify-center">
           <LanguageSwitcherCommon />
         </div>
-      </div>
-    </div>
+      </div>{" "}
+    </nav>
   );
 };
 
