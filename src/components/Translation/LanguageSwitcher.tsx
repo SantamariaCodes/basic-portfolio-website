@@ -38,7 +38,7 @@ const LanguageSwitcher = () => {
             {i18n.language === 'en' && (
               <button
                 onClick={() => changeLanguage('es')}
-                className="text-gray-700 block w-full text-left px-4 py-2 text-sm hover:bg-gray-100"
+                className="text-gray-700 block w-full text-left px-4 py-2 text-sm hover:text-deepBlue"
               >
                 ESP
               </button>
@@ -46,7 +46,7 @@ const LanguageSwitcher = () => {
             {i18n.language === 'es' && (
               <button
                 onClick={() => changeLanguage('en')}
-                className="text-gray-700 block w-full text-left px-4 py-2 text-sm hover:bg-gray-100"
+                className="text-gray-700 block w-full text-left px-4 py-2 text-sm hover:text-deepBlue"
               >
                 ENG
               </button>
