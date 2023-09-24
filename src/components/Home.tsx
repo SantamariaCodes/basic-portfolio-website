@@ -20,7 +20,7 @@ const Home: React.ForwardRefRenderFunction<HTMLDivElement, HomeProps> = (
   return (
     <div
       ref={homeRef}
-      className="section flex flex-col  items-center justify-center relative h-[70vh] sm:h-screen"
+      className="section flex flex-col sm:p-10 md:p-16 items-center justify-center relative h-[70vh] sm:h-screen"
       style={{
         backgroundImage: 'url("/resources/img/bg-home.jpeg")',
         backgroundSize: "cover",
@@ -28,13 +28,13 @@ const Home: React.ForwardRefRenderFunction<HTMLDivElement, HomeProps> = (
       }}
     >
       <div className=" flex flex-col items-center gap-4 p-5 sm:p-5 max-w-4xl   ">
-        <h1 className=" md:text-5xl   text-center relative  font-extrabold">
+        <h1 className=" 420px:text-xl  sm:text-3xl md:text-4xl lg:text-5xl   text-center relative  font-extrabold">
           {t("title")}
         </h1>
-        <p className="text-xl text-center  ">{t("description")}</p>
+        <p className="text-sm md:text-xl text-center  ">{t("description")}</p>
         <ProjectsButton onClick={scrollToProjects} />
       </div>
-      <div className="absolute left-0 transform  hidden md:block">
+      <div className="absolute left-0 transform  hidden lg:block">
         <SocialIcons />
       </div>
     </div>

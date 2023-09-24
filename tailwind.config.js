@@ -15,6 +15,9 @@ module.exports = {
         deepBlue: "rgba(36, 79, 229, 1)",
         lessDeepBlue: "rgba(20, 50, 160, 1)",
       },
+      screens: {
+        "420px": "420px",
+      },
     },
   },
   variants: {
