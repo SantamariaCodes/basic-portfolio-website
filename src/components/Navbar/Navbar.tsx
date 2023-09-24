@@ -79,7 +79,9 @@ const Navbar: React.FC<NavbarProps> = ({
               {link.text}
             </button>
           ))}
-          <LanguageSwitcherCommon />
+          <div className="pb-1 lg:pb-0">
+            <LanguageSwitcherCommon />
+          </div>
         </div>
 
         <div className="md:hidden flex-grow-0">
@@ -89,7 +91,7 @@ const Navbar: React.FC<NavbarProps> = ({
       <div
         className={`${
           isOpen ? "block" : "hidden"
-        } lg:hidden w-full block flex-grow lg:flex lg:items-center bg-headerBg`}
+        } md:hidden w-full block flex-grow md:flex lg:items-center bg-headerBg`}
       >
         <div className="font-extrabold lg:flex lg:flex-grow lg:justify-center w-full">
           {links.map((link, index) => (
@@ -105,7 +107,7 @@ const Navbar: React.FC<NavbarProps> = ({
             </button>
           ))}
         </div>
-        <div className="mt-5 pb-5 flex justify-center">
+        <div className="mt-5 pb-5 flex justify-center ">
           <LanguageSwitcherCommon />
         </div>
       </div>{" "}

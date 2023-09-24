@@ -20,29 +20,23 @@ const Home: React.ForwardRefRenderFunction<HTMLDivElement, HomeProps> = (
   return (
     <div
       ref={homeRef}
-      className="h-screen section pt-[100px] flex flex-col items-center justify-center relative"
+      className="section flex flex-col  items-center justify-center relative h-[70vh] sm:h-screen"
       style={{
-        backgroundImage: 'url("/resources/img/bg-home.jpeg")', // Corrected this line
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
+        backgroundImage: 'url("/resources/img/bg-home.jpeg")',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
-      {/* Removed the <img> element for testing */}
-      <h1 className="text-4xl mb-5 text-center relative z-10">
-        {t("title")} {/* use t function to get translations */}
-      </h1>
-
-      {/* Place the SocialIcons outside the h1 and visible only on screens above lg */}
-      <div className="absolute left-0 transform z-10 hidden lg:block">
+      <div className=" flex flex-col items-center gap-4 p-5 sm:p-5 max-w-4xl   ">
+        <h1 className=" md:text-5xl   text-center relative  font-extrabold">
+          {t("title")}
+        </h1>
+        <p className="text-xl text-center  ">{t("description")}</p>
+        <ProjectsButton onClick={scrollToProjects} />
+      </div>
+      <div className="absolute left-0 transform  hidden md:block">
         <SocialIcons />
       </div>
-
-      <p className="text-xl text-center w-4/5 md:w-1/2 z-10">
-        {t("description")} {/* use t function to get translations */}
-      </p>
-
-      <ProjectsButton onClick={scrollToProjects} />
     </div>
   );
 };

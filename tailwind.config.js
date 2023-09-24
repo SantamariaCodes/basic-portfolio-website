@@ -13,7 +13,7 @@ module.exports = {
       },
       colors: {
         deepBlue: "rgba(36, 79, 229, 1)",
-        lessDeepBlue: "rgba(3,57,108)",
+        lessDeepBlue: "rgba(20, 50, 160, 1)",
       },
     },
   },

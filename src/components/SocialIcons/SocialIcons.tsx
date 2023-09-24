@@ -9,7 +9,7 @@ const SocialIcons: React.FC = () => (
         href="https://twitter.com/yourUsername" 
         target="_blank" 
         rel="noopener noreferrer"
-        className="p-4 hover:bg-purple-300 rounded transition"
+        className="p-4 hover:bg-deepBlue rounded transition "
     >
       <TwitterIcon className="h-6 w-6 text-black" />
     </a>
@@ -17,7 +17,7 @@ const SocialIcons: React.FC = () => (
         href="https://linkedin.com/in/yourUsername" 
         target="_blank" 
         rel="noopener noreferrer"
-        className="p-4 hover:bg-purple-300 rounded transition"
+        className="p-4 hover:bg-deepBlue rounded transition"
     >
       <LinkedInIcon className="h-6 w-6 text-black" />
     </a>
@@ -25,7 +25,7 @@ const SocialIcons: React.FC = () => (
         href="https://github.com/yourUsername" 
         target="_blank" 
         rel="noopener noreferrer"
-        className="p-4 hover:bg-purple-300 rounded transition"
+        className="p-4 hover:bg-deepBlue rounded transition"
     >
       <GitHubIcon className="h-6 w-6 text-black" />
     </a>
