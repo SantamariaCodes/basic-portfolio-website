@@ -2,7 +2,7 @@ import React, { useCallback } from "react";
 import ProjectsButton from "./Buttons/ProjectsButton";
 import useScrollToRef from "../hooks/useScrollToRef";
 import SocialIcons from "./SocialIcons/SocialIcons";
-import { useTranslation } from "react-i18next"; // import this hook
+import { useTranslation } from "react-i18next"; 
 
 interface HomeProps {
   homeRef: React.RefObject<HTMLDivElement>;
@@ -15,7 +15,7 @@ const Home: React.ForwardRefRenderFunction<HTMLDivElement, HomeProps> = (
 ) => {
   const { projectsRef, homeRef } = props;
   const scrollToProjects = useScrollToRef(projectsRef);
-  const { t } = useTranslation("home"); // use the hook with the 'home' namespace
+  const { t } = useTranslation("home"); 
 
   return (
     <div
