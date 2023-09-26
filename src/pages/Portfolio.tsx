@@ -20,7 +20,7 @@ function Portfolio() {
         contactRef={contactRef}
       />
       <Home homeRef={homeRef} projectsRef={projectsRef} />
-      <About aboutRef={aboutRef} />
+      <About aboutRef={aboutRef} contactRef={contactRef} />
       <Projects ref={projectsRef} />
       <Contact ref={contactRef} />
     </div>
