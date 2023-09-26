@@ -38,19 +38,8 @@ const About: React.ForwardRefRenderFunction<HTMLDivElement, AboutProps> = (
           <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-left">
             {t("introductionHeader")}
           </h3>
-          <div className="mb-8 leading-8 xl:text-lg">
-            <div className="mb-4">
-              <Trans components={[<strong />, <strong />]}>
-                {t("introductionParagraph1")}
-              </Trans>
-            </div>
-            <div className="mb-4">
-              <Trans components={[<strong />, <strong />]}>
-                {t("introductionParagraph2")}
-              </Trans>
-            </div>
-            <div>{t("introductionParagraph3")}</div>
-          </div>
+          <div className="mb-8 leading-8 xl:text-lg" dangerouslySetInnerHTML={{ __html: t("introduction") }} />
+
           <button className="bg-deepBlue text-white py-2 px-6 lg:py-3 font-bold lg:px-8 rounded mb-8">
             {t("contactButton")}
           </button>
