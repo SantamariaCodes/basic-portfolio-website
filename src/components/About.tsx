@@ -17,7 +17,7 @@ const About: React.ForwardRefRenderFunction<HTMLDivElement, AboutProps> = (
   return (
     <div
       ref={aboutRef}
-      className="section  flex flex-col items-center md:pt-10 p-5 bg-white  pb-20"
+      className="section  flex flex-col items-center  px-5 2xl:pt-10  bg-gray-50 "
     >
       <SectionHeader title={t("title")} />
 
@@ -26,7 +26,7 @@ const About: React.ForwardRefRenderFunction<HTMLDivElement, AboutProps> = (
           <SubsectionHeader title={t("introductionHeader")} />
 
           <div
-            className="mb-8 leading-8 xl:text-lg"
+            className="mb-8 leading-8 xl:text-lg pt-4"
             dangerouslySetInnerHTML={{ __html: t("introduction") }}
           />
           <ContactButton label={t("contactButton")} targetRef={contactRef} />
@@ -34,7 +34,7 @@ const About: React.ForwardRefRenderFunction<HTMLDivElement, AboutProps> = (
         <div className="md:w-1/2 md:p-5">
           <SubsectionHeader title={t("skillsHeader")} />
 
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap py-4">
             {skillsList.map((skill: string, index: number) => (
               <span
                 key={index}
