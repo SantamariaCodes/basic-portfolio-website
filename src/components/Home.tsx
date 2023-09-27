@@ -27,16 +27,18 @@ const Home: React.ForwardRefRenderFunction<HTMLDivElement, HomeProps> = (
         backgroundPosition: "center",
       }}
     >
-      <div className=" flex flex-col items-center gap-4 p-5 pt-8 sm:p-5 lg:pt-20 max-w-4xl   ">
-        <h1 className=" 420px:text-xl  sm:text-3xl md:text-4xl lg:text-5xl   text-center relative md:mb-4  font-extrabold">
+      <div className="absolute inset-0 bg-white bg-opacity-10"></div> {/* This div creates the whitened overlay effect */}
+
+      <div className=" flex flex-col items-center gap-4 p-5 pt-8 sm:p-5 lg:pt-20 max-w-4xl z-10">
+        <h1 className="420px:text-xl sm:text-3xl md:text-4xl lg:text-5xl text-center relative md:mb-4 font-extrabold">
           {t("title")}
         </h1>
-        <p className="text-sm   md:text-xl text-center  mb-2 md:mb-4 ">
+        <p className="text-sm md:text-xl text-center mb-2 md:mb-4">
           {t("description")}
         </p>
         <ProjectsButton onClick={scrollToProjects} />
       </div>
-      <div className="absolute left-0 transform  hidden lg:block">
+      <div className="absolute left-0 transform hidden lg:block z-10">
         <SocialIcons />
       </div>
     </div>

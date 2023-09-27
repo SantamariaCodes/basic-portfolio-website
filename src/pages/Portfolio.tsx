@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Home from "../components/Home";
 import About from "../components/About";
 import Projects from "../components/Projects/Projects";
-import Contact from "../components/Contact";
+import Contact from "../components/Contact/Contact";
 
 function Portfolio() {
   const homeRef = useRef(null);
