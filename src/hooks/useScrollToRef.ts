@@ -1,6 +1,9 @@
 import { useCallback } from "react";
 
-const useScrollToRef = (ref: React.RefObject<HTMLDivElement>, offset = 75, duration = 2200) => {
+const useScrollToRef = (ref: React.RefObject<HTMLDivElement>, offset = 75) => {
+  // Determine the duration based on the screen width
+  const duration = window.innerWidth < 100 ? 2000 : 1500;
+
   return useCallback(() => {
     if (ref.current) {
       const start = window.scrollY;
@@ -17,9 +20,8 @@ const useScrollToRef = (ref: React.RefObject<HTMLDivElement>, offset = 75, durat
       
       window.requestAnimationFrame(animate);
     }
-  }, [ref, offset, duration]);
+  }, [ref, offset]);
 };
-
 
 const easeInOutQuad = (t: number, b: number, c: number, d: number) => {
   t /= d / 2;
