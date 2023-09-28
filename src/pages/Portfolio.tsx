@@ -4,6 +4,7 @@ import Home from "../components/Home";
 import About from "../components/About";
 import Projects from "../components/Projects/Projects";
 import Contact from "../components/Contact/Contact";
+import Footer from "../components/Footer";
 
 function Portfolio() {
   const homeRef = useRef(null);
@@ -23,6 +24,7 @@ function Portfolio() {
       <About aboutRef={aboutRef} contactRef={contactRef} />
       <Projects ref={projectsRef} />
       <Contact ref={contactRef} />
+      <Footer/>
     </div>
   );
 }
