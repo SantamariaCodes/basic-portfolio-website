@@ -26,9 +26,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
         <div className="lg:col-span-5 flex flex-col gap-4 justify-center text-center lg:text-left ">
           <SubsectionHeader title={title} />
-          <p className="text-gray-600 font-semibold leading-7 text-lg">{description}</p>
+          <p className="text-gray-600 font-semibold leading-7 text-lg">
+            {description}
+          </p>
           <div className="lg:pt-5">
-            <ProjectLinkButton label="View Project" url="https://example.com" />
+            <ProjectLinkButton label="View Project" url="https://tuyo.dev" />
           </div>
         </div>
         <div className="lg:col-span-2"></div>{" "}
