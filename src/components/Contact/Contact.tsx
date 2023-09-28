@@ -7,7 +7,7 @@ import ContactForm from "./ContactForm";
 const Contact = React.forwardRef<HTMLDivElement>((props, ref) => (
   <div
     ref={ref}
-    className="section flex flex-col items-center p-5 md:py-10 lg:py-20 h-[100vh] sm:h-screen relative"
+    className="section flex flex-col items-center p-5 md:py-10 lg:py-20  relative"
     style={{
       backgroundImage: 'url("/resources/img/bg-home.jpeg")',
       backgroundSize: "cover",

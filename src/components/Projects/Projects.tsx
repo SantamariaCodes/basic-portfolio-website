@@ -15,12 +15,7 @@ const projectsData = [
       "This is a description of Project 1.This This is a description of Project 1.This This is a description of Project 1.This This is a description of Project 1.This This is a description of Project 1.This This is a description of Project 1.This ",
     imageUrl: "/resources/img/tuyoDev.png",
   },
-  {
-    title: "Tuyo Dev",
-    description:
-      "This is a description of Project 1.This This is a description of Project 1.This This is a description of Project 1.This This is a description of Project 1.This This is a description of Project 1.This This is a description of Project 1.This ",
-    imageUrl: "/resources/img/tuyoDev.png",
-  },
+ 
 ];
 
 const Projects = React.forwardRef<HTMLDivElement>((props, ref) => (
