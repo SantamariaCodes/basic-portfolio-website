@@ -1,0 +1,12 @@
+{
+  "contactHeader": "CONTACTO",
+  "contactIntro": "Siéntete libre de contactarme llenando el formulario de abajo y te responderé lo más pronto posible.",
+
+  "nameLabel": "Nombre",
+  "namePlaceholder": "Ingresa tu nombre",
+  "emailLabel": "Correo ",
+  "emailPlaceholder": "Ingresa tu correo electrónico",
+  "messageLabel": "Mensaje",
+  "messagePlaceholder": "Ingresa tu mensaje",
+  "submitButton": "Enviar"
+}

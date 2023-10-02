@@ -1,0 +1,14 @@
+{
+  "title": "PROYECTOS",
+  "introductionHeader": "Descripcion basica",
+  "projectOneTitle": " Tuyo Dev",
+  "ProjectOneDescription": "Pagina web hecha por mi",
+  "ProjectOneWebsiteUrl": "https://tuyo.dev",
+  "ProjectImageURl": "/resources/img/tuyoDev.png",
+  "nonWorkingArray": [
+    { "projectOneTitle": " Tuyo Dev NEW TITLE" },
+    { "ProjectOneDescription": "Estaba chido" },
+    { "ProjectOneWebsiteUrl": "https://tuyo.dev" },
+    { "ProjectImageURl": "/resources/img/tuyoDev.png" }
+  ]
+}

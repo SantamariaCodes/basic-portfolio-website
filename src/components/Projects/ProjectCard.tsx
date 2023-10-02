@@ -30,7 +30,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             {description}
           </p>
           <div className="lg:pt-5">
-            <ProjectLinkButton label="View Project" url="https://tuyo.dev" />
+          <ProjectLinkButton label="View Project" url={buttonLink} />
           </div>
         </div>
         <div className="lg:col-span-2"></div>{" "}
