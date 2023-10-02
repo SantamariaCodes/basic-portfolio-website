@@ -29,7 +29,7 @@ const Home: React.ForwardRefRenderFunction<HTMLDivElement, HomeProps> = (
     >
       <div className="absolute inset-0 bg-white bg-opacity-10"></div> {/* This div creates the whitened overlay effect */}
 
-      <div className=" flex flex-col items-center gap-4 p-5 pt-8 sm:p-5 lg:pt-20 max-w-4xl z-10">
+      <div className=" flex flex-col items-center gap-4 p-5  sm:p-5 lg:pt-20 max-w-4xl z-10">
         <h1 className="420px:text-xl sm:text-3xl md:text-4xl lg:text-5xl text-center relative md:mb-4 font-extrabold">
           {t("title")}
         </h1>

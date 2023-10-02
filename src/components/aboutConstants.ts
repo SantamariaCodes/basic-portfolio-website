@@ -1,14 +1,15 @@
 export const skillsList: string[] = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "REACT",
-    "SASS",
-    "GIT",
-    "Terminal",
-    "Tailwind",
-    "AI",
-    "Boilerplate",
-    "SCRUM",
- ];
- 
+  "JavaScript",
+  "Redux",
+  "React",
+  "TypeScript",
+  "GIT",
+  "TailwindCSS",
+  "SCRUM",
+  "Recharts",
+  "HTML",
+  "CSS",
+  "CBA",
+  "Vercel",
+  "ES6"
+];

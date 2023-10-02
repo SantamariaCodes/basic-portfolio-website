@@ -1,10 +1,14 @@
 {
   "title": "PROJECTS",
-  "introductionHeader": "Here you will find some of the personal and clients projects that I created with each project containing its own case study",
+  "introductionHeader": "Here you will find some of the personal and clients projects that I created with each project containing its own case study.",
   "projectOneTitle": " Tuyo Dev",
-  "ProjectOneDescription": "Estaba chido",
+  "ProjectOneDescription": "Crafted with React, TypeScript, and TailwindCSS, this dynamic landing page serves as a comprehensive introduction to the company's diverse services. The site features an interactive carousel showcasing key offerings, smooth scroll functionality for optimal navigation, and a user-friendly contact form for direct inquiries, ensuring both clarity and a top-tier browsing experience.",
   "ProjectOneWebsiteUrl": "https://tuyo.dev",
   "ProjectImageURl": "/resources/img/tuyoDev.png",
+  "projectTwoitle": " Tuyo Dev",
+  "ProjectTwoDescription": "Developed using Redux for state management and seamless API consumption, this sophisticated company dashboard provides real-time insights into business metrics. The intuitive interface visualizes crucial data points, ensuring stakeholders have quick access to vital information, while backend integration allows for up-to-date reporting, making decision-making efficient and data-driven.",
+  "ProjectTwoWebsiteUrl": "https://tuyo.dev",
+  "ProjectTwoImageURl": "/resources/img/tuyoDev.png",
   "nonWorkingArray": [
     { "projectOneTitle": " Tuyo Dev NEW TITLE" },
     { "ProjectOneDescription": "Estaba chido" },
