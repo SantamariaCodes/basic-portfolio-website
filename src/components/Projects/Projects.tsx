@@ -3,24 +3,10 @@ import SectionHeader from "../Typography/SectionHeader";
 import ProjectCard from "./ProjectCard";
 import { useTranslation } from "react-i18next";
 
-const projectsData = [
-  {
-    title: "Tuyo Dev",
-    description:
-      "This is a description of Project 1.This This is a description of Project 1.This This is a description of Project 1.This This is a description of Project 1.This This is a description of Project 1.This This is a description of Project 1.This ",
-    imageUrl: "/resources/img/tuyoDev.png",
-  },
-  {
-    title: "Tuyo Dev",
-    description:
-      "This is a description of Project 1.This This is a description of Project 1.This This is a description of Project 1.This This is a description of Project 1.This This is a description of Project 1.This This is a description of Project 1.This ",
-    imageUrl: "/resources/img/tuyoDev.png",
-  },
-];
-
 const Projects = React.forwardRef<HTMLDivElement>((props, ref) => {
-  // Use the useTranslation hook
+  
   const { t } = useTranslation("projects");
+  console.log(t('nonWorkingArray:1:ProjectOneNonWorkingDescription'));
 
   return (
     <div
@@ -41,10 +27,21 @@ const Projects = React.forwardRef<HTMLDivElement>((props, ref) => {
           buttonLink={t(`ProjectOneWebsiteUrl`)}
         />
         <ProjectCard
-          title={t(`projectOneTitle`)}
-          description={t(`ProjectOneDescription`)}
-          imageUrl={t(`ProjectImageURl`)}
-          buttonLink={t(`ProjectOneLink`)}
+          title={t(`projectTwoTitle`)}
+          description={t(`ProjectTwoDescription`)}
+          imageUrl={t(`ProjectTwoImageURl`)}
+          buttonLink={t(`ProjectTwoWebsiteUrl`)}
+        />
+        <ProjectCard
+          title={t(`ProjectThreeTitle`)}
+          description={t(`ProjectThreeDescription`)}
+          imageUrl={t(`ProjectThreeImageURl`)}
+          buttonLink={t(`ProjectThreeWebsiteUrl`)}
+        />
+        <ProjectCard
+          title={t(`ProjectFourTitle`)}
+          description={t(`ProjectFourDescription`)}
+          imageUrl={t(`ProjectFourImageURl`)}
         />
       </div>
     </div>

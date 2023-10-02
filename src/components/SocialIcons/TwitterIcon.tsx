@@ -7,7 +7,7 @@ interface IconProps {
 const TwitterIcon: React.FC<IconProps> = ({ className }) => (
 
     <svg
-      xmlns="https://twitter.com/your-twitter-handle"
+      xmlns="https://twitter.com/DiegoSM47"
       width="24"
       height="24"
       viewBox="0 0 24 24"

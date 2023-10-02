@@ -1,13 +1,31 @@
 {
   "title": "PROYECTOS",
-  "introductionHeader": "Descripcion basica",
+  "introductionHeader": "Aquí encontrarás algunos de los proyectos personales y para clientes que he creado, con cada proyecto conteniendo su propio estudio de caso.",
+  "buttonText" : "Ver Proyecto",
+
   "projectOneTitle": " Tuyo Dev",
-  "ProjectOneDescription": "Pagina web hecha por mi",
+  "ProjectOneDescription": "Desarrollado con React, TypeScript y TailwindCSS, esta página de inicio dinámica sirve como una introducción completa a los diversos servicios de la empresa. El sitio cuenta con un carrusel interactivo que muestra las principales ofertas, funcionalidad de desplazamiento suave para una navegación óptima y un formulario de contacto amigable para consultas directas, garantizando claridad y una experiencia de navegación de primera categoría.",
   "ProjectOneWebsiteUrl": "https://tuyo.dev",
   "ProjectImageURl": "/resources/img/tuyoDev.png",
+
+  "projectTwoTitle": "Repositorio de mi portafolio",
+  "ProjectTwoDescription": "Bienvenido a mi sitio web de portafolio, creado meticulosamente usando React, TypeScript y TailwindCSS. Con un diseño elegante y funcionalidad de desplazamiento suave, encapsula mi trayectoria profesional y cuerpo de trabajo. ¿Intrigado por lo que está funcionando bajo el capó del mismo sitio en el que te encuentras? Sumérgete en el repositorio de código abierto y explora su funcionamiento interno. Agradezco cualquier comentario y contribución.",
+  "ProjectTwoWebsiteUrl": "https://github.com/CodeSantamaria/basic-portfolio-website",
+  "ProjectTwoImageURl": "/resources/img/tuyoDev.png",
+
+  "ProjectThreeTitle": "Countries API",
+  "ProjectThreeDescription": "Regresa en el tiempo y explora uno de mis primeros intentos en el desarrollo web: una simple integración de la API de países. Aunque pueda parecer rudimentario en comparación con mis trabajos actuales, este proyecto tiene un lugar especial ya que muestra mi incipiente habilidad para integrar con APIs externas. Es un testimonio de mi crecimiento y la base sobre la cual se construye mi experiencia actual. Si bien puede no tener el pulido de mis proyectos más recientes, es un reflejo genuino de mi viaje de desarrollo.",
+  "ProjectThreeWebsiteUrl": "https://countries-api-fetch.vercel.app/",
+  "ProjectThreeImageURl": "/resources/img/tuyoDev.png",
+
+  "ProjectFourTitle": "Panel de Control de la Empresa",
+  "ProjectFourDescription": "Desarrollado utilizando Redux para la gestión de estado y consumo fluido de la API, este sofisticado panel de control de la empresa proporciona información en tiempo real sobre las métricas empresariales. La interfaz intuitiva visualiza puntos de datos cruciales, asegurando que las partes interesadas tengan acceso rápido a la información vital, mientras que la integración con el backend permite informes actualizados, haciendo la toma de decisiones eficiente y basada en datos.",
+  "ProjectFourWebsiteUrl": "https://tuyo.dev",
+  "ProjectFourImageURl": "/resources/img/tuyoDev.png",
+
   "nonWorkingArray": [
     { "projectOneTitle": " Tuyo Dev NEW TITLE" },
-    { "ProjectOneDescription": "Estaba chido" },
+    { "ProjectOneNonWorkingDescription": "Estaba chido" },
     { "ProjectOneWebsiteUrl": "https://tuyo.dev" },
     { "ProjectImageURl": "/resources/img/tuyoDev.png" }
   ]

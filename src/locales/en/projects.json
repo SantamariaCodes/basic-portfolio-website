@@ -2,16 +2,30 @@
   "title": "PROJECTS",
   "introductionHeader": "Here you will find some of the personal and clients projects that I created with each project containing its own case study.",
   "projectOneTitle": " Tuyo Dev",
+  "buttonText" : "View Project",
+
   "ProjectOneDescription": "Crafted with React, TypeScript, and TailwindCSS, this dynamic landing page serves as a comprehensive introduction to the company's diverse services. The site features an interactive carousel showcasing key offerings, smooth scroll functionality for optimal navigation, and a user-friendly contact form for direct inquiries, ensuring both clarity and a top-tier browsing experience.",
   "ProjectOneWebsiteUrl": "https://tuyo.dev",
   "ProjectImageURl": "/resources/img/tuyoDev.png",
-  "projectTwoitle": " Tuyo Dev",
-  "ProjectTwoDescription": "Developed using Redux for state management and seamless API consumption, this sophisticated company dashboard provides real-time insights into business metrics. The intuitive interface visualizes crucial data points, ensuring stakeholders have quick access to vital information, while backend integration allows for up-to-date reporting, making decision-making efficient and data-driven.",
-  "ProjectTwoWebsiteUrl": "https://tuyo.dev",
+
+  "projectTwoTitle": "My portfolio Repository",
+  "ProjectTwoDescription": "Welcome to my portfolio website, crafted meticulously using React, TypeScript, and TailwindCSS. Boasting a sleek design and smooth scrolling functionality, it encapsulates my professional trajectory and body of work. Intrigued by what's running under the hood of the very site you're on? Dive into the open-source repository and explore its inner workings. I welcome any feedback and contributions",
+  "ProjectTwoWebsiteUrl": "https://github.com/CodeSantamaria/basic-portfolio-website",
   "ProjectTwoImageURl": "/resources/img/tuyoDev.png",
+
+  "ProjectThreeTitle": "Countries API",
+  "ProjectThreeDescription": "Step back in time and explore one of my initial forays into web development: a straightforward country API integration. Although it might seem rudimentary compared to my current works, this project holds a special place as it showcases my budding ability to integrate with external APIs. It's a testament to my growth and the foundation upon which my current expertise is built. While it might not boast the polish of my more recent projects, it's a genuine reflection of my development journey.",
+  "ProjectThreeWebsiteUrl": "https://countries-api-fetch.vercel.app/",
+  "ProjectThreeImageURl": "/resources/img/tuyoDev.png",
+
+  "ProjectFourTitle": "Company Dashboard",
+  "ProjectFourDescription": "Developed using Redux for state management and seamless API consumption, this sophisticated company dashboard provides real-time insights into business metrics. The intuitive interface visualizes crucial data points, ensuring stakeholders have quick access to vital information, while backend integration allows for up-to-date reporting, making decision-making efficient and data-driven.",
+  "ProjectFourWebsiteUrl": "https://tuyo.dev",
+  "ProjectFourImageURl": "/resources/img/tuyoDev.png",
+
   "nonWorkingArray": [
     { "projectOneTitle": " Tuyo Dev NEW TITLE" },
-    { "ProjectOneDescription": "Estaba chido" },
+    { "ProjectOneNonWorkingDescription": "Estaba chido" },
     { "ProjectOneWebsiteUrl": "https://tuyo.dev" },
     { "ProjectImageURl": "/resources/img/tuyoDev.png" }
   ]

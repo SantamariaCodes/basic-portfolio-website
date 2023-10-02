@@ -1,7 +1,7 @@
 {
-  "title": "Acerca de mi",
-  "introductionHeader": "GSobre mi",
-  "introduction": "hola! As a <strong>proficient front-end developer</strong>, I take pride in crafting <strong>pixel-perfect UIs</strong>. With extensive knowledge in modern frameworks, I ensure responsiveness across all devices. My dedication is evident in every line of code, ensuring optimal performance and user experience.<br/><br/>Collaborating closely with design and backend teams, I <strong>bridge the gap</strong> to bring visions to life. Leveraging the <strong>latest web technologies</strong>, I'm always at the forefront of the digital landscape. My code is clean, maintainable, and in line with the best industry practices.<br/><br/>Collaborating closely with design and backend teams, I <strong>bridge the gap</strong> to bring visions to life. Leveraging the <strong>latest web technologies</strong>.",
-  "contactButton": "CONTACT",
-  "skillsHeader": "My Skills"
+  "title": "ACERCA DE  MÍ",
+  "introductionHeader": "¡Conóceme!",
+  "introduction": "Mi viaje en la programación comenzó en 2020 cuando tomé un curso de Java en la Universidad de Helsinki y pronto me di cuenta de que el software era mi vocación. Me incliné hacia el <strong>desarrollo front-end</strong> ya que sentía que era un enfoque más práctico, y me enamoré completamente de él. Con el tiempo, he tomado cursos de JavaScript, CSS, HTML, diseño web, Swift IOS, React y TypeScript, incluso participando y terminando un bootcamp en 2022.<br/><br/>Aunque valoro enormemente los cursos en línea y los bootcamps, nada, en mi opinión, se compara con la <strong>experiencia práctica</strong>. Afortunadamente, a principios de 2023 fui aceptado como pasante en Tuyo Technologies, una empresa de desarrollo de software, y más tarde fui promovido a Desarrollador Front-end Jr. Mi fascinación por la industria es profunda y mi sed de conocimiento es insaciable.<br/><br/>Creo firmemente que la tecnología tiene el poder de <strong>mejorar la experiencia humana</strong>, aumentar la productividad y tener un impacto significativo en cualquier negocio. Estoy buscando activamente proyectos en los que pueda contribuir y aprovechar mis habilidades en este <strong>viaje interminable y emocionante</strong>.",
+  "contactButton": "CONTACTO",
+  "skillsHeader": "Mis habilidades"
 }

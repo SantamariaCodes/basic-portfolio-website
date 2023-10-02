@@ -13,9 +13,15 @@ const Footer: React.FC = () => {
           <h2 className="text-2xl md:text-left text-center font-bold pb-6 sm:mb-0  ">
             {t("footerName")}
           </h2>
+
           <div
-            className="text-center md:text-left font-semibold leading-4"
+            className="text-center md:text-left font-semibold leading-6 md:hidden" 
             dangerouslySetInnerHTML={{ __html: t("footerDescription") }}
+          />
+
+          <div
+            className="hidden md:block text-center md:text-left font-semibold leading-4" 
+            dangerouslySetInnerHTML={{ __html: t("footerDescriptionDesktop") }}
           />
         </div>
         <div className="flex flex-col items-center text-center mb-8 sm:mb-0">
