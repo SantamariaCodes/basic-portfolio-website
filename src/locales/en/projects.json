@@ -1,35 +1,31 @@
 {
   "title": "PROJECTS",
   "introductionHeader": "Here you will find some of the personal and clients projects that I created with each project containing its own case study.",
-  "projectOneTitle": " Tuyo Dev",
-  "buttonText" : "View Project",
-
-  "ProjectOneDescription": "Crafted with React, TypeScript, and TailwindCSS, this dynamic landing page serves as a comprehensive introduction to the company's diverse services. The site features an interactive carousel showcasing key offerings, smooth scroll functionality for optimal navigation, and a user-friendly contact form for direct inquiries, ensuring both clarity and a top-tier browsing experience.",
-  "ProjectOneWebsiteUrl": "https://tuyo.dev",
-  "ProjectImageURl": "/resources/img/tuyoDev.png",
-
-  "projectTwoTitle": "My portfolio Repository",
-  "ProjectTwoDescription": "Explore my portfolio site, built with React, TypeScript, and TailwindCSS. Showcasing a sleek design and my professional journey, you can delve into its open-source repository to see the magic behind the scenes. Feedback and contributions are always welcome."
-,
-  "ProjectTwoWebsiteUrl": "https://github.com/CodeSantamaria/basic-portfolio-website",
-  "ProjectTwoImageURl": "/resources/img/tuyoDev.png",
-
-  "ProjectThreeTitle": "Countries API",
-  "ProjectThreeDescription": "Discover one of my initial ventures into web development: a simple country API integration. While more basic compared to recent projects, it symbolizes my early steps in API integration and represents the foundation of my growth in development. It's an authentic snapshot of my progression."
-,
-  "ProjectThreeWebsiteUrl": "https://countries-api-fetch.vercel.app/",
-  "ProjectThreeImageURl": "/resources/img/tuyoDev.png",
-
-  "ProjectFourTitle": "Company Dashboard",
-  "ProjectFourDescription": "Coming soon! This company dashboard is built using Redux and recharts for state management and dynamic data visualization. With seamless API integration, its intuitive interface showcases crucial metrics, ensuring stakeholders can make swift, data-driven decisions."
-  ,
-  "ProjectFourWebsiteUrl": "https://tuyo.dev",
-  "ProjectFourImageURl": "/resources/img/tuyoDev.png",
-
-  "nonWorkingArray": [
-    { "projectOneTitle": " Tuyo Dev NEW TITLE" },
-    { "ProjectOneNonWorkingDescription": "Estaba chido" },
-    { "ProjectOneWebsiteUrl": "https://tuyo.dev" },
-    { "ProjectImageURl": "/resources/img/tuyoDev.png" }
+  "buttonText": "View Project",
+  "projects": [
+    {
+      "title": "Tuyo Dev",
+      "description": "Crafted with React, TypeScript, and TailwindCSS, this dynamic landing page serves as a comprehensive introduction to the company's diverse services. The site features an interactive carousel showcasing key offerings, smooth scroll functionality for optimal navigation, and a user-friendly contact form for direct inquiries, ensuring both clarity and a top-tier browsing experience.",
+      "websiteUrl": "https://tuyo.dev",
+      "imageUrl": "/resources/img/tuyoDev.png"
+    },
+    {
+      "title": "My portfolio Repository",
+      "description": "Explore my portfolio site, built with React, TypeScript, and TailwindCSS. Showcasing a sleek design and my professional journey, you can delve into its open-source repository to see the magic behind the scenes. Feedback and contributions are always welcome.",
+      "websiteUrl": "https://github.com/CodeSantamaria/basic-portfolio-website",
+      "imageUrl": "/resources/img/tuyoDev.png"
+    },
+    {
+      "title": "Countries API",
+      "description": "Discover one of my initial ventures into web development: a simple country API integration. While more basic compared to recent projects, it symbolizes my early steps in API integration and represents the foundation of my growth in development. It's an authentic snapshot of my progression.",
+      "websiteUrl": "https://countries-api-fetch.vercel.app/",
+      "imageUrl": "/resources/img/tuyoDev.png"
+    },
+    {
+      "title": "Company Dashboard",
+      "description": "Coming soon! This company dashboard is built using Redux and recharts for state management and dynamic data visualization. With seamless API integration, its intuitive interface showcases crucial metrics, ensuring stakeholders can make swift, data-driven decisions.",
+      "websiteUrl": "https://tuyo.dev",
+      "imageUrl": "/resources/img/tuyoDev.png"
+    }
   ]
 }

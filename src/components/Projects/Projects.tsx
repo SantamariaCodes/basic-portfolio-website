@@ -4,9 +4,15 @@ import ProjectCard from "./ProjectCard";
 import { useTranslation } from "react-i18next";
 
 const Projects = React.forwardRef<HTMLDivElement>((props, ref) => {
-  
+  type Project = {
+    title: string;
+    description: string;
+    imageUrl: string;
+    websiteUrl: string;
+  };
+
   const { t } = useTranslation("projects");
-  console.log(t('nonWorkingArray:1:ProjectOneNonWorkingDescription'));
+  const projectsData = t("projects", { returnObjects: true }) as Project[];
 
   return (
     <div
@@ -20,29 +26,15 @@ const Projects = React.forwardRef<HTMLDivElement>((props, ref) => {
       </div>
 
       <div className="w-full max-w-[1420px]">
-        <ProjectCard
-          title={t(`projectOneTitle`)}
-          description={t(`ProjectOneDescription`)}
-          imageUrl={t(`ProjectImageURl`)}
-          buttonLink={t(`ProjectOneWebsiteUrl`)}
-        />
-        <ProjectCard
-          title={t(`projectTwoTitle`)}
-          description={t(`ProjectTwoDescription`)}
-          imageUrl={t(`ProjectTwoImageURl`)}
-          buttonLink={t(`ProjectTwoWebsiteUrl`)}
-        />
-        <ProjectCard
-          title={t(`ProjectThreeTitle`)}
-          description={t(`ProjectThreeDescription`)}
-          imageUrl={t(`ProjectThreeImageURl`)}
-          buttonLink={t(`ProjectThreeWebsiteUrl`)}
-        />
-        <ProjectCard
-          title={t(`ProjectFourTitle`)}
-          description={t(`ProjectFourDescription`)}
-          imageUrl={t(`ProjectFourImageURl`)}
-        />
+        {projectsData.map((project, index) => (
+          <ProjectCard
+            key={index}
+            title={project.title}
+            description={project.description}
+            imageUrl={project.imageUrl}
+            buttonLink={project.websiteUrl}
+          />
+        ))}
       </div>
     </div>
   );

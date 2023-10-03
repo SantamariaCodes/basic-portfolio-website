@@ -11,7 +11,6 @@ function Portfolio() {
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
-
   return (
     <div className="bg-gray-100">
       <Navbar
@@ -24,7 +23,7 @@ function Portfolio() {
       <About aboutRef={aboutRef} contactRef={contactRef} />
       <Projects ref={projectsRef} />
       <Contact ref={contactRef} />
-      <Footer/>
+      <Footer />
     </div>
   );
 }

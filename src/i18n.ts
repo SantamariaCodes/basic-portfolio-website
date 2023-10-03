@@ -42,7 +42,6 @@ i18n
     },
     lng: "en",
     fallbackLng: "en",
-    keySeparator: false,
     interpolation: {
       escapeValue: false,
     },
