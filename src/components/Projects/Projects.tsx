@@ -21,7 +21,7 @@ const Projects = React.forwardRef<HTMLDivElement>((props, ref) => {
     >
       <SectionHeader title={t("title")} />
 
-      <div className="text-center lg:text-lg mb-4 2xl:mb-8 max-w-[1420px] w-full">
+      <div className="text-center text-lg mb-4 2xl:mb-8 max-w-[1420px] w-full">
         {t("introductionHeader")}
       </div>
 
