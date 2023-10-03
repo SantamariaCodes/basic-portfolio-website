@@ -6,7 +6,7 @@ interface SubsectionHeaderProps {
 
 const SubsectionHeader: React.FC<SubsectionHeaderProps> = ({ title }) => {
   return (
-    <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold  text-center lg:text-left">
+    <h3 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold  text-center lg:text-left">
       {title} 
     </h3>
   );

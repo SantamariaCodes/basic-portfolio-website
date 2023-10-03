@@ -24,7 +24,7 @@
     {
       "title": "Company Dashboard",
       "description": "Coming soon! This company dashboard is built using Redux and recharts for state management and dynamic data visualization. With seamless API integration, its intuitive interface showcases crucial metrics, ensuring stakeholders can make swift, data-driven decisions.",
-      "websiteUrl": "https://tuyo.dev",
+      "isCompleted": false,
       "imageUrl": "/resources/img/tuyoDev.png"
     }
   ]

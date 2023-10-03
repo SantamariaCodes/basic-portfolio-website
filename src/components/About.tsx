@@ -3,7 +3,6 @@ import { useTranslation, Trans } from "react-i18next";
 import SectionHeader from "./Typography/SectionHeader";
 import SubsectionHeader from "./Typography/SubsectionHeader ";
 import ContactButton from "./Buttons/ContactButton";
-import { skillsList } from "./aboutConstants";
 interface AboutProps {
   aboutRef: React.RefObject<HTMLDivElement>;
   contactRef: React.RefObject<HTMLDivElement>;
@@ -13,6 +12,7 @@ const About: React.ForwardRefRenderFunction<HTMLDivElement, AboutProps> = (
 ) => {
   const { aboutRef, contactRef } = props;
   const { t } = useTranslation("about");
+  const skills: string[] = t("skillsList", { returnObjects: true }) as string[];
 
   return (
     <div
@@ -35,7 +35,7 @@ const About: React.ForwardRefRenderFunction<HTMLDivElement, AboutProps> = (
           <SubsectionHeader title={t("skillsHeader")} />
 
           <div className="flex flex-wrap py-4">
-            {skillsList.map((skill: string, index: number) => (
+            {skills.map((skill: string, index: number) => (
               <span
                 key={index}
                 className="bg-gray-300 text-sm sm:text-base md:text-base lg:text-lg text-gray-500 font-bold py-2 px-3 sm:py-2 sm:px-4 md:py-2 md:px-4 lg:py-3 lg:px-5 rounded-md m-2"

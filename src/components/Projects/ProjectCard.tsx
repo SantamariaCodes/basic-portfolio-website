@@ -7,6 +7,8 @@ interface ProjectCardProps {
   description: string;
   imageUrl: string;
   buttonLink?: string;  
+  isCompleted?: boolean;  
+
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -14,7 +16,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   imageUrl,
   buttonLink,
-  
+  isCompleted = true,  
 }) => {
   const { t } = useTranslation("projects");
 
@@ -28,13 +30,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="lg:col-span-5 flex flex-col gap-4 justify-center text-center lg:text-left ">
+        <div className="lg:col-span-5 flex flex-col gap-3 md:gap-4 justify-center text-center lg:text-left ">
           <SubsectionHeader title={title} />
           <p className="text-gray-600 font-semibold leading-7 text-lg">
             {description}
           </p>
           <div className="lg:pt-5">
-            {buttonLink && <ProjectLinkButton label= {t("buttonText")} url={buttonLink} />}  {/* Conditionally render the button */}
+          {isCompleted && buttonLink && <ProjectLinkButton label={t("buttonText")} url={buttonLink} />}  {/* Updated conditional render */}
           </div>
         </div>
         <div className="lg:col-span-2"></div>
