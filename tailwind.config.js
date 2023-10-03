@@ -12,8 +12,8 @@ module.exports = {
         hard: "0 7px 19px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.23)",
       },
       colors: {
-        deepBlue: "rgba(36, 79, 229, 1)",
-        lessDeepBlue: "rgba(20, 50, 160, 1)",
+        deepBlue: "rgba(0,163,0)",
+        lessDeepBlue: "rgba(0,114,0)",
       },
       screens: {
         "420px": "420px",

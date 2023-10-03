@@ -9,17 +9,20 @@
   "ProjectImageURl": "/resources/img/tuyoDev.png",
 
   "projectTwoTitle": "My portfolio Repository",
-  "ProjectTwoDescription": "Welcome to my portfolio website, crafted meticulously using React, TypeScript, and TailwindCSS. Boasting a sleek design and smooth scrolling functionality, it encapsulates my professional trajectory and body of work. Intrigued by what's running under the hood of the very site you're on? Dive into the open-source repository and explore its inner workings. I welcome any feedback and contributions",
+  "ProjectTwoDescription": "Explore my portfolio site, built with React, TypeScript, and TailwindCSS. Showcasing a sleek design and my professional journey, you can delve into its open-source repository to see the magic behind the scenes. Feedback and contributions are always welcome."
+,
   "ProjectTwoWebsiteUrl": "https://github.com/CodeSantamaria/basic-portfolio-website",
   "ProjectTwoImageURl": "/resources/img/tuyoDev.png",
 
   "ProjectThreeTitle": "Countries API",
-  "ProjectThreeDescription": "Step back in time and explore one of my initial forays into web development: a straightforward country API integration. Although it might seem rudimentary compared to my current works, this project holds a special place as it showcases my budding ability to integrate with external APIs. It's a testament to my growth and the foundation upon which my current expertise is built. While it might not boast the polish of my more recent projects, it's a genuine reflection of my development journey.",
+  "ProjectThreeDescription": "Discover one of my initial ventures into web development: a simple country API integration. While more basic compared to recent projects, it symbolizes my early steps in API integration and represents the foundation of my growth in development. It's an authentic snapshot of my progression."
+,
   "ProjectThreeWebsiteUrl": "https://countries-api-fetch.vercel.app/",
   "ProjectThreeImageURl": "/resources/img/tuyoDev.png",
 
   "ProjectFourTitle": "Company Dashboard",
-  "ProjectFourDescription": "Developed using Redux for state management and seamless API consumption, this sophisticated company dashboard provides real-time insights into business metrics. The intuitive interface visualizes crucial data points, ensuring stakeholders have quick access to vital information, while backend integration allows for up-to-date reporting, making decision-making efficient and data-driven.",
+  "ProjectFourDescription": "Coming soon! This company dashboard is built using Redux and recharts for state management and dynamic data visualization. With seamless API integration, its intuitive interface showcases crucial metrics, ensuring stakeholders can make swift, data-driven decisions."
+  ,
   "ProjectFourWebsiteUrl": "https://tuyo.dev",
   "ProjectFourImageURl": "/resources/img/tuyoDev.png",
 
