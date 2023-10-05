@@ -13,20 +13,20 @@
       "title": "My portfolio Repository",
       "description": "Explore my portfolio site, built with React, TypeScript, and TailwindCSS. Showcasing a sleek design and my professional journey, you can delve into its open-source repository to see the magic behind the scenes. Feedback and contributions are always welcome.",
       "websiteUrl": "https://github.com/CodeSantamaria/basic-portfolio-website",
-      "imageUrl": "/resources/img/tuyoDev.png"
+      "imageUrl": "/resources/img/myPortfolio.jpeg"
     },
     {
       "title": "Countries API",
       "description": "Discover one of my initial ventures into web development: a simple country API integration. While more basic compared to recent projects, it symbolizes my early steps in API integration and represents the foundation of my growth in development. It's an authentic snapshot of my progression.",
       "websiteUrl": "https://countries-api-fetch.vercel.app/",
-      "imageUrl": "/resources/img/tuyoDev.png"
+      "imageUrl": "/resources/img/countriesAPI.png"
     },
     {
       "title": "Company's Dashboard",
       "description": "Coming soon! This company dashboard is built using Redux and recharts for state management and dynamic data visualization. With seamless API integration, its intuitive interface showcases crucial metrics, ensuring stakeholders can make swift, data-driven decisions.",
       "isCompleted": false,
 
-      "imageUrl": "/resources/img/tuyoDev.png"
+      "imageUrl": "/resources/img/comingSoon.png"
     }
   ]
 }
