@@ -3,6 +3,7 @@
 import React from "react";
 import { Formik, Form, Field } from "formik";
 import { useTranslation } from "react-i18next";
+import axios from "axios";
 interface ContactFormProps {
   onSubmit: (values: { name: string; email: string; message: string }) => void;
 }
@@ -14,8 +15,21 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
     <Formik
       initialValues={{ name: "", email: "", message: "" }}
       onSubmit={(values, actions) => {
-        onSubmit(values);
-        actions.setSubmitting(false);
+        console.log("Form onSubmit triggered!", values);
+
+        axios
+          .post("/api/send-email", values) // Call the serverless function
+          .then((response) => {
+            console.log(response.data);
+            actions.setSubmitting(false);
+            // Maybe show a success message
+          })
+          .catch((error) => {
+            actions.setSubmitting(false);
+        
+
+            // Maybe show an error message
+          });
       }}
     >
       {({ isSubmitting }) => (
