@@ -1,38 +1,45 @@
-// Contacttsx
-
-import React from "react";
+import React, { useState } from "react";
 import { Formik, Form, Field } from "formik";
 import { useTranslation } from "react-i18next";
 import axios from "axios";
-import { useState } from "react";
+import Modal from ".././Modal";
+
 interface ContactFormProps {
   onSubmit?: (values: { name: string; email: string; message: string }) => void;
 }
+
 const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
   const { t } = useTranslation("contact");
   const [feedback, setFeedback] = useState<string | null>(null);
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [modalType, setModalType] = useState<"success" | "error">("success");
 
   return (
     <Formik
-    initialValues={{ name: "", email: "", message: "" }}
-    onSubmit={(values, actions) => {
-      console.log("Form onSubmit triggered!", values);
+      initialValues={{ name: "", email: "", message: "" }}
+      onSubmit={(values, actions) => {
+        console.log("Form onSubmit triggered!", values);
 
-      axios
-        .post("/api/send-email", values) // Call the serverless function
-        .then((response) => {
-          console.log(response.data);
-          actions.setSubmitting(false);
-          
-          setFeedback("Your message was successfully sent!"); // Success feedback
-        })
-        .catch((error) => {
-          actions.setSubmitting(false);
-          
-          setFeedback("There was an error sending your message. Please try again later."); // Error feedback
-        });
-    }}
-  >
+        axios
+          .post("/api/send-email", values)
+          .then((response) => {
+            console.log(response.data);
+            actions.setSubmitting(false);
+
+            setFeedback(t("successFeedback")); 
+            setModalType("success");
+            setIsModalVisible(true);
+          })
+          .catch((error) => {
+            actions.setSubmitting(false);
+
+            setFeedback(t("errorFeedback"));
+
+            setModalType("error");
+            setIsModalVisible(true);
+          });
+      }}
+    >
       {({ isSubmitting }) => (
         <Form>
           <label className="block mb-6 ">
@@ -70,11 +77,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
               placeholder={t("messagePlaceholder")}
             />
           </label>
-          {feedback && (
-            <div className="mt-4 text-center text-red-600"> {/* adjust styles as needed */}
-              {feedback}
-            </div>
-          )}
 
           <button
             type="submit"
@@ -83,9 +85,14 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
           >
             {t("submitButton")}
           </button>
-          
+
+          <Modal
+            isVisible={isModalVisible}
+            title={feedback || "Status"}
+            onClose={() => setIsModalVisible(false)}
+            type={modalType}
+          />
         </Form>
-        
       )}
     </Formik>
   );
