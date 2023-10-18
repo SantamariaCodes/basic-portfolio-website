@@ -1,21 +1,43 @@
-// Contacttsx
-
-import React from "react";
+import React, { useState } from "react";
 import { Formik, Form, Field } from "formik";
 import { useTranslation } from "react-i18next";
+import axios from "axios";
+import Modal from ".././Modal";
+
 interface ContactFormProps {
-  onSubmit: (values: { name: string; email: string; message: string }) => void;
+  onSubmit?: (values: { name: string; email: string; message: string }) => void;
 }
 
 const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
   const { t } = useTranslation("contact");
+  const [feedback, setFeedback] = useState<string | null>(null);
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [modalType, setModalType] = useState<"success" | "error">("success");
 
   return (
     <Formik
       initialValues={{ name: "", email: "", message: "" }}
       onSubmit={(values, actions) => {
-        onSubmit(values);
-        actions.setSubmitting(false);
+        console.log("Form onSubmit triggered!", values);
+
+        axios
+          .post("/api/send-email", values)
+          .then((response) => {
+            console.log(response.data);
+            actions.setSubmitting(false);
+
+            setFeedback(t("successFeedback")); 
+            setModalType("success");
+            setIsModalVisible(true);
+          })
+          .catch((error) => {
+            actions.setSubmitting(false);
+
+            setFeedback(t("errorFeedback"));
+
+            setModalType("error");
+            setIsModalVisible(true);
+          });
       }}
     >
       {({ isSubmitting }) => (
@@ -55,6 +77,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
               placeholder={t("messagePlaceholder")}
             />
           </label>
+
           <button
             type="submit"
             className="bg-deepBlue hover:bg-lessDeepBlue text-white py-2 px-6 lg:py-3 font-bold lg:px-8 rounded "
@@ -62,6 +85,13 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
           >
             {t("submitButton")}
           </button>
+
+          <Modal
+            isVisible={isModalVisible}
+            title={feedback || "Status"}
+            onClose={() => setIsModalVisible(false)}
+            type={modalType}
+          />
         </Form>
       )}
     </Formik>

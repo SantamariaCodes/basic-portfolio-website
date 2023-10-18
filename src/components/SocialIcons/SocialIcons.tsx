@@ -2,7 +2,6 @@ import React from "react";
 import TwitterIcon from "./TwitterIcon";
 import LinkedInIcon from "./LinkedInIcon";
 import GitHubIcon from "./GitHubIcon";
-
 const SocialIcons: React.FC = () => (
   <div className="flex flex-col bg-white w-16 p-2  items-center justify-center  shadow-2xl ">
     <a

@@ -28,18 +28,21 @@ const Footer: React.FC = () => {
           <h3 className="text-2xl font-semibold mb-6"> {t("socialHeader")}</h3>
           <div className="flex space-x-6">
             <LinkedInIcon
-              className="w-8 h-8 hover:text-gray-300 "
+              className="w-8 h-8 hover:text-gray-300"
               href="https://www.linkedin.com/in/diego-santamaria-miguel"
+              embeddedLink={true}
             />
 
             <TwitterIcon
               className="w-8 h-8 hover:text-gray-300"
               href="https://twitter.com/DiegoSM47"
+              embeddedLink={true}
             />
 
             <GitHubIcon
-              className="w-8 h-8 hover:text-gray-200"
+              className="w-8 h-8 hover:text-gray-300"
               href="https://github.com/CodeSantamaria"
+              embeddedLink={true}
             />
           </div>
         </div>

@@ -8,5 +8,8 @@
   "emailPlaceholder": "Enter your email",
   "messageLabel": "Message",
   "messagePlaceholder": "Enter your message",
-  "submitButton": "Submit"
+  "submitButton": "Submit",
+  "successFeedback": " Your message was successfully sent!",
+  "errorFeedback": "There was an error sending your message. Please try again later."
+  
 }
