@@ -42,14 +42,14 @@ export function LanguageSwitcherCommon() {
   return (
     <div className="flex items-center">
       <button
-        className={`text-black border-none focus:outline-none mr-2 lg:text-xl  leading-tight rounded font-yourFontFamily
+        className={` border-none focus:outline-none mr-2 lg:text-xl  leading-tight rounded font-yourFontFamily
         ${isCurrentLanguage("en") ? "font-extrabold" : hoverClass}`}
         onClick={() => changeLanguage("en")}
       >
         <ArrowLeft isBold={isCurrentLanguage("en")} /> ENG
       </button>
       <button
-        className={`text-black border-none focus:outline-none ml-2 lg:text-xl  leading-tight rounded font-yourFontFamily
+        className={` border-none focus:outline-none ml-2 lg:text-xl  leading-tight rounded font-yourFontFamily
         ${isCurrentLanguage("es") ? "font-extrabold" : hoverClass}`}
         onClick={() => changeLanguage("es")}
       >

@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 const Footer: React.FC = () => {
   const { t } = useTranslation("footer");
   return (
-    <footer className="bg-black text-white h-[400px] py-20">
+    <footer className="bg-navbarCustomColor text-white h-[400px] py-20">
       <div className="container p-5 md:p-10 mx-auto max-w-7xl flex flex-col-reverse sm:flex-row justify-between items-center">
         <div>
           <h2 className="text-2xl md:text-left text-center font-bold pb-6 sm:mb-0  ">

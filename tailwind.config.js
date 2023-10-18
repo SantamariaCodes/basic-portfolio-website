@@ -14,6 +14,11 @@ module.exports = {
       colors: {
         deepBlue: "rgba(0,163,0)",
         lessDeepBlue: "rgba(0,114,0)",
+        orange: "#FCA311",
+        customColor: '#606c38',
+        navbarCustomColor:'#283618',
+        buttonCustomColor: "#bc6c25",
+        skill: '#dda15e'
       },
       screens: {
         "420px": "420px",

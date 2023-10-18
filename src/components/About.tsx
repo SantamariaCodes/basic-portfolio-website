@@ -17,7 +17,7 @@ const About: React.ForwardRefRenderFunction<HTMLDivElement, AboutProps> = (
   return (
     <div
       ref={aboutRef}
-      className="section  flex flex-col items-center  px-5 2xl:pt-10  bg-gray-50 "
+      className="section  flex flex-col items-center  px-5 2xl:pt-10   "
     >
       <SectionHeader title={t("title")} />
 
