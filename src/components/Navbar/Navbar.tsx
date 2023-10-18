@@ -73,7 +73,7 @@ const Navbar: React.FC<NavbarProps> = ({
           {links.map((link, index) => (
             <button
               key={index}
-              className="font-extrabold lg:px-1 text-sm lg:text-base leading-tight rounded  mx-1 lg:mx-5 hover:text-deepBlue"
+              className="font-extrabold lg:px-1 text-sm lg:text-base leading-tight rounded  mx-1 lg:mx-5 hover:text-buttonCustomColor"
               onClick={link.action}
             >
               {link.text}
@@ -97,7 +97,7 @@ const Navbar: React.FC<NavbarProps> = ({
           {links.map((link, index) => (
             <button
               key={index}
-              className="block text-center w-full py-3 hover:bg-gray-200 transition duration-300 ease-in-out lg:inline-block lg:mt-0 lg:mx-2 border-b border-customColor hover:text-deepBlue"
+              className="block text-center w-full py-3 hover:bg-customColor transition duration-300 ease-in-out lg:inline-block lg:mt-0 lg:mx-2 border-b border-customColor hover:text-buttonCustomColor"
               onClick={() => {
                 setIsOpen(false);
                 link.action();

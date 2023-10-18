@@ -80,7 +80,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
 
           <button
             type="submit"
-            className="bg-deepBlue hover:bg-lessDeepBlue text-white py-2 px-6 lg:py-3 font-bold lg:px-8 rounded "
+            className="bg-buttonCustomColor hover:bg-lessDeepBlue text-white py-2 px-6 lg:py-3 font-bold lg:px-8 rounded "
             disabled={isSubmitting}
           >
             {t("submitButton")}
