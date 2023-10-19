@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         sans: ["Mulish", "system-ui"],
       },
+      fontWeight: {
+        'extrabold': '800',  // or '900' if your font supports it
+      },
       boxShadow: {
         soft: "0 10px 100px rgba(0, 0, 0, 0.1)",
         medium: "0 4px 14px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.1)",
