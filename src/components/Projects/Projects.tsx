@@ -17,7 +17,7 @@ const Projects = React.forwardRef<HTMLDivElement>((props, ref) => {
   return (
     <div
       ref={ref}
-      className="section flex flex-col items-center px-5 bg-white 2xl:pt-10"
+      className="section flex flex-col items-center px-5  2xl:pt-10"
     >
       <SectionHeader title={t("title")} />
 

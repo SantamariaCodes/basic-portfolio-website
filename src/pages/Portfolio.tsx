@@ -12,7 +12,7 @@ function Portfolio() {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
   return (
-    <div className="bg-gray-100">
+    <div className="bg-customColor">
       <Navbar
         homeRef={homeRef}
         aboutRef={aboutRef}

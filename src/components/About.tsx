@@ -12,12 +12,16 @@ const About: React.ForwardRefRenderFunction<HTMLDivElement, AboutProps> = (
 ) => {
   const { aboutRef, contactRef } = props;
   const { t } = useTranslation("about");
+  const formattedIntroduction = t("introduction")
+  .replace(/<extrabold>/g, '<span class="font-extrabold">')
+  .replace(/<\/extrabold>/g, '</span>');
+
   const skills: string[] = t("skillsList", { returnObjects: true }) as string[];
 
   return (
     <div
       ref={aboutRef}
-      className="section  flex flex-col items-center  px-5 2xl:pt-10  bg-gray-50 "
+      className="section  flex flex-col items-center  px-5 2xl:pt-10   "
     >
       <SectionHeader title={t("title")} />
 
@@ -27,7 +31,7 @@ const About: React.ForwardRefRenderFunction<HTMLDivElement, AboutProps> = (
 
           <div
             className="mb-8 leading-8 xl:text-lg pt-4"
-            dangerouslySetInnerHTML={{ __html: t("introduction") }}
+            dangerouslySetInnerHTML={{ __html: t(formattedIntroduction) }}
           />
           <ContactButton label={t("contactButton")} targetRef={contactRef} />
         </div>

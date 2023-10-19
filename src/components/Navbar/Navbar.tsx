@@ -56,7 +56,7 @@ const Navbar: React.FC<NavbarProps> = ({
   ];
 
   return (
-    <nav className="bg-white fixed w-full z-50 shadow-soft" ref={navRef}>
+    <nav className="bg-navbarCustomColor fixed w-full z-50 shadow-soft" ref={navRef}>
       <div className="flex items-center justify-between p-3 sm:p-5 px-5 md:px-5 lg:px-10 2xl:px-12 lg:justify-start lg:py-4">
         <div className="flex items-center " onClick={scrollToHome}>
           <img
@@ -64,7 +64,7 @@ const Navbar: React.FC<NavbarProps> = ({
             className="h-10 md:h-12 lg:h-12 2xl:h-16 rounded-full"
             alt=""
           />
-          <p className="lg:px-1 font-extrabold text-sm sm:text-base lg:text-lg leading-tight rounded  ml-2 sm:ml-4 ">
+          <p className="lg:px-1 font-extrabold text-sm sm:text-base lg:text-lg leading-tight rounded   ml-2 sm:ml-4 ">
             DIEGO SANTAMARIA
           </p>
         </div>
@@ -73,7 +73,7 @@ const Navbar: React.FC<NavbarProps> = ({
           {links.map((link, index) => (
             <button
               key={index}
-              className="font-extrabold lg:px-1 text-sm lg:text-base leading-tight rounded  mx-1 lg:mx-5 hover:text-deepBlue"
+              className="font-extrabold lg:px-1 text-sm lg:text-base leading-tight rounded  mx-1 lg:mx-5 hover:text-buttonCustomColor"
               onClick={link.action}
             >
               {link.text}
@@ -97,7 +97,7 @@ const Navbar: React.FC<NavbarProps> = ({
           {links.map((link, index) => (
             <button
               key={index}
-              className="block text-center w-full py-3 hover:bg-gray-200 transition duration-300 ease-in-out lg:inline-block lg:mt-0 lg:mx-2 border-b border-white hover:text-deepBlue"
+              className="block text-center w-full py-3 hover:bg-customColor transition duration-300 ease-in-out lg:inline-block lg:mt-0 lg:mx-2 border-b border-customColor hover:text-buttonCustomColor"
               onClick={() => {
                 setIsOpen(false);
                 link.action();
