@@ -8,7 +8,7 @@ interface SvgProps {
 const HamburgerIcon: React.FC<SvgProps> = ({ className, onClick }) => (
 <svg
   onClick={onClick}
-  style={{ color: "#fefae0" }} // Inline style to set color
+  style={{ fill: "#fefae0" }}
   className={`h-6 w-6 ${className}`}
   viewBox="0 0 20 20"
   xmlns="http://www.w3.org/2000/svg"

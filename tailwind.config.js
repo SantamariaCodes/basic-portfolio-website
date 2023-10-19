@@ -13,7 +13,7 @@ module.exports = {
       },
       colors: {
         deepBlue: "rgba(0,163,0)",
-        lessDeepBlue: "rgba(0,114,0)",
+        lessDeepBlue: "#A96121",
         orange: "#FCA311",
         customColor: '#606c38',
         navbarCustomColor:'#283618',
