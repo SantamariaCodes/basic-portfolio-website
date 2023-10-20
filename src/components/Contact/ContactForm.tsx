@@ -26,7 +26,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
             console.log(response.data);
             actions.setSubmitting(false);
 
-            setFeedback(t("successFeedback")); 
+            setFeedback(t("successFeedback"));
             setModalType("success");
             setIsModalVisible(true);
           })
@@ -41,37 +41,29 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
       }}
     >
       {({ isSubmitting }) => (
-        <Form>
+        <Form className=" text-gray-600">
           <label className="block mb-6 ">
-            <span className="text-gray-600 lg:text-xl font-bold">
-              {" "}
-              {t("nameLabel")}
-            </span>
+            <span className=" lg:text-xl font-bold"> {t("nameLabel")}</span>
             <Field
-              className="mt-2 p-4 w-full lg:text-lg rounded border font-semibold bg-gray-100"
+              className="mt-2 p-4 w-full lg:text-lg  rounded border font-semibold bg-gray-100"
               type="text"
               name="name"
               placeholder={t("namePlaceholder")}
             />
           </label>
           <label className="block mb-6">
-            <span className="text-gray-600 lg:text-xl font-bold">
-              {t("emailLabel")}
-            </span>
+            <span className=" lg:text-xl font-bold">{t("emailLabel")}</span>
             <Field
-              className="mt-2 p-4 w-full lg:text-lg rounded border font-semibold bg-gray-100"
+              className="mt-2 p-4 w-full lg:text-lg rounded border font-semibold  bg-gray-100"
               type="email"
               name="email"
               placeholder={t("emailPlaceholder")}
             />
           </label>
           <label className="block mb-6">
-            <span className="text-gray-600 lg:text-xl font-bold">
-              {" "}
-              {t("messageLabel")}
-            </span>
+            <span className=" lg:text-xl font-bold"> {t("messageLabel")}</span>
             <Field
-              className="mt-2 p-4 w-full lg:text-lg font-semibold rounded border bg-gray-100 h-40"
+              className="mt-2 p-4 w-full lg:text-lg font-semibold rounded border  bg-gray-100 h-40"
               as="textarea"
               name="message"
               placeholder={t("messagePlaceholder")}

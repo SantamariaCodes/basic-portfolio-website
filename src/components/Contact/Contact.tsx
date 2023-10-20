@@ -10,7 +10,7 @@ const Contact = React.forwardRef<HTMLDivElement>((props, ref) => {
   return (
     <div
       ref={ref}
-      className="section flex flex-col sm:p-10 md:p-16 items-center justify-center relative h-[90vh] sm:h-screen"
+      className="section flex flex-col sm:p-10 md:p-16 items-center justify-center relative min-h-[90vh] sm:h-screen"
       style={{
         backgroundImage: 'url("/resources/img/bg-home.jpeg")',
         backgroundSize: "cover",
@@ -23,7 +23,7 @@ const Contact = React.forwardRef<HTMLDivElement>((props, ref) => {
         <p className="text-center   lg:text-lg mb-2 2xl:mb-8 max-w-[1420px] w-full">
           {t("contactIntro")}
         </p>
-        <div className=" z-10 w-full max-w-2xl p-3 bg-white shadow-xl rounded">
+        <div className=" z-10 w-full max-w-2xl p-5 bg-white shadow-xl rounded">
           <ContactForm onSubmit={(values) => console.log(values)} />
         </div>
       </div>
