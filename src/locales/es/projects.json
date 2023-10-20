@@ -7,25 +7,25 @@
       "title": "Tuyo Dev",
       "description": "Diseñado con React, TypeScript y TailwindCSS, esta página sirve como una introducción completa a los diversos servicios de la empresa. El sitio cuenta con un carrusel interactivo que muestra las principales ofertas, funcionalidad de desplazamiento suave para una navegación óptima y un formulario de contacto amigable para consultas directas, asegurando claridad y una experiencia de navegación de primer nivel.",
       "websiteUrl": "https://tuyo.dev",
-      "imageUrl": "/resources/img/tuyoDev.png"
+      "imageUrl": "/resources/img/tuyoDev-min.png"
     },
     {
       "title": "Mi Repositorio de Portafolio",
       "description": "Explora mi sitio de portafolio, construido con React, TypeScript y TailwindCSS. Mostrando un diseño elegante y mi trayectoria profesional, puedes sumergirte en su repositorio de código abierto para ver la magia detrás de escena. Las opiniones y contribuciones siempre son bienvenidas.",
       "websiteUrl": "https://github.com/CodeSantamaria/basic-portfolio-website",
-      "imageUrl": "/resources/img/myPortfolio.png"
+      "imageUrl": "/resources/img/myPortfolio-min.png"
     },
     {
       "title": "API de Países",
       "description": "Descubre una de mis primeras incursiones en el desarrollo web: una simple integración con la API de países. Aunque es más básico en comparación con proyectos recientes, simboliza mis primeros pasos en la integración de APIs y representa la base de mi crecimiento en desarrollo. Es una auténtica instantánea de mi progresión.",
       "websiteUrl": "https://countries-api-fetch.vercel.app/",
-      "imageUrl": "/resources/img/countriesAPI.png"
+      "imageUrl": "/resources/img/countriesAPI-min.png"
     },
     {
       "title": "Panel de Control de la Empresa",
       "description": "¡Próximamente! Este panel de control de la empresa está construido con Redux y recharts para la gestión del estado y la visualización dinámica de datos. Con una integración de API impecable, su interfaz intuitiva muestra métricas cruciales, asegurando que los stakeholders puedan tomar decisiones rápidas basadas en datos.",
       "isCompleted": false,
-      "imageUrl": "/resources/img/comingSoon.png"
+      "imageUrl": "/resources/img/comingSoon-min.png"
     }
   ]
 }
