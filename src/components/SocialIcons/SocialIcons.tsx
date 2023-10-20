@@ -21,7 +21,7 @@ const SocialIcons: React.FC = () => (
       <LinkedInIcon className="h-6 w-6" />
     </a>
     <a
-      href="https://github.com/CodeSantamaria"
+      href="https://github.com/SantamariaCodes"
       target="_blank"
       rel="noopener noreferrer"
       className="p-4 hover:bg-buttonCustomColor rounded transition"

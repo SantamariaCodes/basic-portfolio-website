@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
 
             <GitHubIcon
               className="w-8 h-8 hover:text-gray-300"
-              href="https://github.com/CodeSantamaria"
+              href="https://github.com/SantamariaCodes"
               embeddedLink={true}
             />
           </div>
