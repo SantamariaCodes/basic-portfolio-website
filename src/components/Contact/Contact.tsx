@@ -18,12 +18,12 @@ const Contact = React.forwardRef<HTMLDivElement>((props, ref) => {
       }}
     >
       <div className="absolute inset-0 bg-customColor bg-opacity-70"></div>
-      <div className=" flex flex-col items-center -mt-10 gap-1 md:gap-4 px-5  sm:p-5 lg:pt-20 max-w-4xl z-10 ">
+      <div className=" flex flex-col items-center gap-1 md:gap-4 px-5 sm:p-5 lg:pt-20 max-w-4xl z-10 ">
         <SectionHeader title={t("contactHeader")} />
         <p className="text-center   lg:text-lg mb-2 2xl:mb-8 max-w-[1420px] w-full">
           {t("contactIntro")}
         </p>
-        <div className=" z-10 w-full max-w-2xl p-5 bg-white shadow-xl rounded">
+        <div className=" z-10 w-full max-w-2xl p-3 bg-white shadow-xl rounded">
           <ContactForm onSubmit={(values) => console.log(values)} />
         </div>
       </div>
