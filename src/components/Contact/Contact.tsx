@@ -10,7 +10,7 @@ const Contact = React.forwardRef<HTMLDivElement>((props, ref) => {
   return (
     <div
       ref={ref}
-      className="section flex flex-col sm:p-10 md:p-16 items-center justify-center relative min-h-[90vh] sm:h-screen"
+      className="section flex flex-col sm:p-10 md:p-16 items-center justify-center relative min-h-[90vh] "
       style={{
         backgroundImage: 'url("/resources/img/bg-home.jpeg")',
         backgroundSize: "cover",
