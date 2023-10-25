@@ -15,10 +15,10 @@ module.exports = {
         hard: "0 7px 19px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.23)",
       },
       colors: {
-        hoverbgCustomColor: "#A96121",
+        hoverCustomColor: "#A96121",
         bgCustomColor: "#003049",
-        navbarbgCustomColor: "#002039 ",
-        buttonbgCustomColor: "#568bac",
+        navbarBgCustomColor: "#002039 ",
+        buttonBgCustomColor: "#568bac",
       },
       screens: {
         "420px": "420px",

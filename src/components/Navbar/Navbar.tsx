@@ -56,7 +56,7 @@ const Navbar: React.FC<NavbarProps> = ({
   ];
 
   return (
-    <nav className="bg-navbarbgCustomColor fixed w-full z-50 shadow-soft" ref={navRef}>
+    <nav className="bg-navbarBgCustomColor fixed w-full z-50 shadow-soft" ref={navRef}>
       <div className="flex items-center justify-between p-3 sm:p-5 px-5 md:px-5 lg:px-10 2xl:px-12 lg:justify-start lg:py-4">
         <div className="flex items-center " onClick={scrollToHome}>
           <img
@@ -73,7 +73,7 @@ const Navbar: React.FC<NavbarProps> = ({
           {links.map((link, index) => (
             <button
               key={index}
-              className="font-extrabold lg:px-1 text-sm lg:text-base leading-tight rounded  mx-1 lg:mx-5 hover:text-buttonbgCustomColor"
+              className="font-extrabold lg:px-1 text-sm lg:text-base leading-tight rounded  mx-1 lg:mx-5 hover:text-buttonBgCustomColor"
               onClick={link.action}
             >
               {link.text}
@@ -97,7 +97,7 @@ const Navbar: React.FC<NavbarProps> = ({
           {links.map((link, index) => (
             <button
               key={index}
-              className="block text-center w-full py-3 hover:bg-bgCustomColor transition duration-300 ease-in-out lg:inline-block lg:mt-0 lg:mx-2 border-b border-bgCustomColor hover:text-buttonbgCustomColor"
+              className="block text-center w-full py-3 hover:bg-bgCustomColor transition duration-300 ease-in-out lg:inline-block lg:mt-0 lg:mx-2 border-b border-bgCustomColor hover:text-buttonBgCustomColor"
               onClick={() => {
                 setIsOpen(false);
                 link.action();
