@@ -1,7 +1,7 @@
 import React from "react";
-import LinkedInIcon from "./SocialIcons/LinkedInIcon";
-import TwitterIcon from "./SocialIcons/TwitterIcon";
-import GitHubIcon from "./SocialIcons/GitHubIcon";
+import LinkedInIcon from "../components/SocialIcons/LinkedInIcon";
+import TwitterIcon from "../components/SocialIcons/TwitterIcon";
+import GitHubIcon from "../components/SocialIcons/GitHubIcon";
 import { useTranslation } from "react-i18next";
 
 const Footer: React.FC = () => {

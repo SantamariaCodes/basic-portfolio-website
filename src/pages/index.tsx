@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
-import Navbar from "../components/Navbar/Navbar";
-import Home from "../components/Home";
-import About from "../components/About";
-import Projects from "../components/Projects/Projects";
-import Contact from "../components/Contact/Contact";
-import Footer from "../components/Footer";
+import Navbar from "../layout/Navbar/Navbar";
+import Home from "../sections/Header";
+import About from "../sections/About/About";
+import Projects from "../sections/Projects/Projects";
+import Contact from "../sections/Contact/Contact";
+import Footer from "../layout/Footer";
 
 function Portfolio() {
   const homeRef = useRef(null);

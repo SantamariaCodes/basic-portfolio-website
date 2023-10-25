@@ -1,7 +1,7 @@
 // Contact.tsx
 
 import React from "react";
-import SectionHeader from "../Typography/SectionHeader";
+import SectionHeader from "../../components/Typography/SectionHeader";
 import ContactForm from "./ContactForm";
 import { useTranslation } from "react-i18next";
 

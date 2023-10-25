@@ -1,8 +1,8 @@
 import React from "react";
 import { useTranslation, Trans } from "react-i18next";
-import SectionHeader from "./Typography/SectionHeader";
-import SubsectionHeader from "./Typography/SubsectionHeader ";
-import ContactButton from "./Buttons/ContactButton";
+import SectionHeader from "../../components/Typography/SectionHeader";
+import SubsectionHeader from "../../components/Typography/SubsectionHeader ";
+import ContactButton from "../../components/Buttons/ContactButton";
 interface AboutProps {
   aboutRef: React.RefObject<HTMLDivElement>;
   contactRef: React.RefObject<HTMLDivElement>;

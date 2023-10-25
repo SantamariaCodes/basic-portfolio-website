@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Formik, Form, Field } from "formik";
 import { useTranslation } from "react-i18next";
 import axios from "axios";
-import Modal from ".././Modal";
+import Modal from "./Modal";
 
 interface ContactFormProps {
   onSubmit?: (values: { name: string; email: string; message: string }) => void;

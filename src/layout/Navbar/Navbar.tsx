@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import useScrollToRef from "../../hooks/useScrollToRef";
 import IconToggle from "./IconsToggle";
-import { LanguageSwitcherCommon } from "../Translation/LanguageSwitcherCommon";
+import { LanguageSwitcherCommon } from "../../components/Translation/LanguageSwitcherCommon";
 
 interface Link {
   text: string;

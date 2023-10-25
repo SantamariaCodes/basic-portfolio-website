@@ -1,5 +1,5 @@
 import React from "react";
-import SubsectionHeader from "../Typography/SubsectionHeader ";
+import SubsectionHeader from "../../components/Typography/SubsectionHeader ";
 import ProjectLinkButton from "./ProjectLinkButton";
 import { useTranslation } from "react-i18next";
 interface ProjectCardProps {

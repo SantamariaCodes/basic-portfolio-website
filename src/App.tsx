@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Portfolio from "./pages/Portfolio";
+import Portfolio from "./pages";
 
 function App() {
   return (

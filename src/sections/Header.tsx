@@ -1,7 +1,7 @@
-import React, { useCallback } from "react";
-import ProjectsButton from "./Buttons/ProjectsButton";
+import React  from "react";
+import ProjectsButton from "../components/Buttons/ProjectsButton";
 import useScrollToRef from "../hooks/useScrollToRef";
-import SocialIcons from "./SocialIcons/SocialIcons";
+import SocialIcons from "../components/SocialIcons/SocialIcons";
 import { useTranslation } from "react-i18next";
 
 interface HomeProps {
