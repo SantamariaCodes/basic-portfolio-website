@@ -37,7 +37,7 @@ export function LanguageSwitcherCommon() {
     return i18n.language === lng;
   };
 
-  const hoverClass = "hover:text-buttonCustomColor";
+  const hoverClass = "hover:text-buttonbgCustomColor";
 
   return (
     <div className="flex items-center">

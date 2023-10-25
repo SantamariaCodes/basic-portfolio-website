@@ -27,7 +27,7 @@ const Home: React.ForwardRefRenderFunction<HTMLDivElement, HomeProps> = (
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute inset-0 bg-customColor bg-opacity-70"></div>
+      <div className="absolute inset-0 bg-bgCustomColor bg-opacity-70"></div>
       <div className=" flex flex-col items-center -mt-10 gap-3 md:gap-4 p-5  sm:p-5 lg:pt-20 max-w-4xl z-10 ">
         <h1 className="text-3xl  420px:text-4xl    lg:text-5xl text-center  relative md:mb-4 font-extrabold">
           {t("title")}

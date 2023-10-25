@@ -1,13 +1,13 @@
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false, 
   theme: {
     extend: {
       fontFamily: {
         sans: ["Mulish", "system-ui"],
       },
       fontWeight: {
-        'extrabold': '800',  // or '900' if your font supports it
+        extrabold: "800", 
       },
       boxShadow: {
         soft: "0 10px 100px rgba(0, 0, 0, 0.1)",
@@ -15,13 +15,10 @@ module.exports = {
         hard: "0 7px 19px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.23)",
       },
       colors: {
-        deepBlue: "rgba(0,163,0)",
-        lessDeepBlue: "#A96121",
-        orange: "#FCA311",
-        customColor: '#003049',
-        navbarCustomColor:'#002039 ',
-        buttonCustomColor: "#568bac",
-        skill: '#dda15e'
+        hoverbgCustomColor: "#A96121",
+        bgCustomColor: "#003049",
+        navbarbgCustomColor: "#002039 ",
+        buttonbgCustomColor: "#568bac",
       },
       screens: {
         "420px": "420px",

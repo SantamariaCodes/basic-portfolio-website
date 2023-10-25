@@ -17,7 +17,7 @@ const Contact = React.forwardRef<HTMLDivElement>((props, ref) => {
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute inset-0 bg-customColor bg-opacity-70"></div>
+      <div className="absolute inset-0 bg-bgCustomColor bg-opacity-70"></div>
       <div className=" flex flex-col items-center  pb-5 gap-1 md:gap-4 px-5 sm:p-5 lg:pt-20 max-w-4xl z-10 ">
         <SectionHeader title={t("contactHeader")} />
         <p className="text-center   lg:text-lg mb-2 2xl:mb-8 max-w-[1420px] w-full">
