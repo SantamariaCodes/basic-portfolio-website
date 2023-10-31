@@ -10,5 +10,14 @@
   "messagePlaceholder": "Ingresa tu mensaje",
   "submitButton": "Enviar",
   "successFeedback": "¡Tu mensaje se ha enviado con éxito!",
-  "errorFeedback": "Hubo un error al enviar tu mensaje. Por favor, intenta de nuevo más tarde."
+  "errorFeedback": "Hubo un error al enviar tu mensaje. Por favor, intenta de nuevo más tarde.",
+
+  "validationErrors": {
+    "nameTooShort": "El nombre es demasiado corto. Debe tener al menos 2 caracteres.",
+    "nameRequired": "Por favor, introduzca su nombre.",
+    "invalidEmail": "Por favor, introduzca una dirección de correo electrónico válida.",
+    "emailRequired": "La dirección de correo electrónico es obligatoria.",
+    "messageTooShort": "Su mensaje es demasiado corto. Debe tener al menos 25 caracteres.",
+    "messageRequired": "Por favor, introduzca un mensaje."
+  }
 }

@@ -10,6 +10,13 @@
   "messagePlaceholder": "Enter your message",
   "submitButton": "Submit",
   "successFeedback": " Your message was successfully sent!",
-  "errorFeedback": "There was an error sending your message. Please try again later."
-  
+  "errorFeedback": "There was an error sending your message. Please try again later.",
+  "validationErrors": {
+    "nameTooShort": "The name is too short. It must be at least 2 characters long.",
+    "nameRequired": "Please enter your name.",
+    "invalidEmail": "Please enter a valid email address.",
+    "emailRequired": "Email address is required.",
+    "messageTooShort": "Your message is too short. It must be at least 25 characters.",
+    "messageRequired": "Please enter a message."
+  }
 }
